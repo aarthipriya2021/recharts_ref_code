@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import PieChartCustom from './components/PieChartCustomLabel';
+import SimpleAreaChart from './components/SimpleAreaChart';
+import SimpleBarChart from './components/SimpleBarChart';
+import SimpleLineChart from './components/SimpleLineChart';
+import SimplePieChart from './components/SimplePieChart';
+import SimpleRadialBarChart from './components/SimpleRadialBarChart';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SimpleLineChart />
+      <SimpleAreaChart />
+      <SimplePieChart />
+      <PieChartCustom />
+      <SimpleRadialBarChart />
+      <SimpleBarChart />
     </div>
   );
 }
